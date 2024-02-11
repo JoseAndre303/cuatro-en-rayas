@@ -1,0 +1,76 @@
+:root{
+    --background-page: #33383d;
+    --red: #ff6868;
+    --yellow: #fffc82;
+    --board-color: #0172d1;
+}
+
+body{
+    color: white;
+    background-color: var(--background-page);
+    margin: 0vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+
+body>div{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#game{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#hovering{
+    flex-direction: row !important;
+    background-color: var(--background-page) !important;
+    border: none !important;
+}
+
+#board, #hovering{
+    background-color: var(--board-color);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around; 
+    border: 1px solid blue;
+    gap: 25px;
+    padding: 25px 0;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.cell{
+    background-color: var(--background-page);
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+}
+
+#foot{
+    justify-content: space-around !important;
+    padding: 10px 400px;
+}
